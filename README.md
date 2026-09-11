@@ -87,3 +87,96 @@ Swiggy MCP Services
   +---- Instamart
   |
   +---- Dineout
+
+Authentication
+
+The project uses:
+
+OAuth 2.1
+PKCE
+Secure access-token handling
+Authenticated MCP requests
+
+The implementation was designed around Swiggy Builders Club authentication and integration requirements.
+
+Technology Stack
+Laravel 12
+PHP
+JavaScript
+Node.js
+Model Context Protocol (MCP)
+OAuth 2.1 + PKCE
+REST / HTTP integrations
+Nginx
+Linux
+Git & GitHub
+DigitalOcean
+Product Thinking
+
+The central design principle was:
+
+Users should describe what they want to accomplish, while the system coordinates the services required to achieve it.
+
+Example:
+
+"I'm planning a family dinner tonight."
+
+The system can then decide whether the user needs:
+
+Food ordering
+Grocery / household items
+Restaurant booking
+Or a combination of services
+
+This shifts the interface from service selection toward intent-driven orchestration.
+
+Key Engineering Challenges
+
+Some of the interesting technical problems included:
+
+Coordinating multiple external MCP services
+Managing authentication across service calls
+Maintaining state between user interactions
+Refreshing cart state after mutations
+Handling different service-specific workflows
+Safely separating Laravel product logic from MCP transport logic
+Deploying and testing authenticated integrations in production
+Live Demo
+
+Live application:
+https://concierge.sarshatechnology.com
+
+The source code is maintained in a private repository because the project contains proprietary application logic and protected integration details.
+
+Builders Club
+
+This project was developed as part of the Swiggy Builders Club program.
+
+It is an independent project and does not represent employment by Swiggy.
+
+About Me
+
+I'm Shashwat Asthana, founder of Sarsha Technology and a software engineer / product builder focused on:
+
+SaaS products
+Laravel
+Applied AI
+APIs and integrations
+Product architecture
+Cloud deployment
+Technical product development
+
+GitHub: https://github.com/shas88
+Sarsha Technology: https://sarshatechnology.com
+
+
+
+> **“It is an independent project and does not represent employment by Swiggy.”**
+
+That's useful because the repository should demonstrate your work without accidentally implying that you worked for Swiggy.
+
+Also, **do not upload source code into this showcase repository later**, even “just a few files.” Keep it purely portfolio-facing.
+
+Once you've committed this README, **pin this repo on your GitHub profile**.
+
+Then we'll create the second showcase for **SmartTask**, which will make the profile suddenly look much less like a ghost town and much more like an actual builder's portfolio. 😄
